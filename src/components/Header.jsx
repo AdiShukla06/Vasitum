@@ -17,7 +17,7 @@ const Header = ({ toggleSidebar }) => {
           <div className="relative rounded-md shadow-sm">
             <input
               type="text"
-              className="form-input w-full sm:text-sm sm:leading-5 pl-10 pr-3 py-2"
+              className="form-input w-full sm:text-sm sm:leading-5 pl-10 pr-3 py-2 hidden md:block"
               placeholder="Search"
             />
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -35,7 +35,7 @@ const Header = ({ toggleSidebar }) => {
           </button>
           <div className="ml-3 flex items-center space-x-2">
             <img className="h-8 w-8 rounded-full" src={pic} alt="Profile" />
-            <span className="font-medium text-gray-700">Aditya Shukla</span>
+            <span className="font-medium text-gray-700 hidden md:block">Aditya Shukla</span>
             <FaChevronDown className="h-5 w-5 text-gray-400" />
           </div>
         </div>
